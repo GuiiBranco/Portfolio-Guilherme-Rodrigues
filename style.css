@@ -1,0 +1,76 @@
+:root {
+    --text-color: white;
+    --gray: rgba(63, 63, 63, 0.363);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+}
+
+.leftHeaderDiv {
+    width: 50%;
+    height: 4rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftHeaderDiv span {
+    color: var(--text-color);
+}
+
+.leftHeaderDiv div a {
+    text-decoration: none;
+}
+
+.rightHeaderDiv {
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.headerLinks {
+    background-color: var(--gray);
+    color: var(--text-color);
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    background-color: lime;
+    display: flex;
+}
+
+.aboutText {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
