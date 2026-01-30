@@ -85,3 +85,29 @@ main {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.tecnologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.tecnologies span {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.tecnologies div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tecnologieImg {
+    height: 5rem;
+}
