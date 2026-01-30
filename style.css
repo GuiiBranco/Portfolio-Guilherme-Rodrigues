@@ -1,6 +1,10 @@
 :root {
     --text-color: white;
     --gray: rgba(63, 63, 63, 0.363);
+    --blue-gradient1: #00336E;
+    --blue-gradient2: #008BB1;
+    --black-gradient1: #151515;
+    --black-gradient2: #292929;
 }
 
 body {
@@ -10,9 +14,33 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.headerContainer {
+    background-color: #090912;
+    background-image: url("./img/background/Terra.png");
+    background-size: auto 29rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    color: var(--text-color);
+    width: 45rem;
+    text-align: center;
+}
+
 header {
-    background-color: black;
-    width: 100%;
+    background-color: rgba(47, 47, 47, 0.532);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0.5rem;
+    width: 99%;
     height: 4rem;
     display: flex;
 }
@@ -58,10 +86,12 @@ header {
 }
 
 main {
-    background-color: #008BB1;
+    background-color: var(--blue-gradient2);
+    background-image: linear-gradient( 45deg, var(--blue-gradient1), var(--blue-gradient2));
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
@@ -136,4 +166,10 @@ main {
 
 .project img {
     width: 100%;
+}
+
+footer {
+    background-color: var(--black-gradient1);
+    background-image: linear-gradient(to right, var(--black-gradient1), var(--black-gradient2));
+    height: 10rem;
 }
